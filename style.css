@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:'Courier New', Courier, monospace;
+}
+
+table{
+    border-spacing: 0; /* es para el espaciado en los bordes y asi iniciar desde lo mas pegado a la casilla*/
+    border-collapse: 0; /* es para juntar los bordes y que en vez de 2 solo sea 1*/
+    width: 800px;
+    margin: 100px auto;
+}
+
+td, th{
+    border: solid 1px rgb(13, 21, 21);
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(146, 199, 216);
+}
+
+td:nth-child(n+3),
+th:nth-child(n+3) {
+    text-align: center;
+}
+
+tbody tr:hover{
+    background-color: rgb(96, 57, 118) !important;
+}
+
+thead{
+    background-color: black;
+    color: white;
+    position: sticky; /* hara que nuestro header se quede en la patte de arriba al hacer scroll */
+    top: 0;
+}
